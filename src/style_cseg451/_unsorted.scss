@@ -1,0 +1,78 @@
+
+.pageBackground .pageContainer .pageContent {
+    margin-bottom: 0;
+}
+
+html.PolicyCenter.ApplyPolicy.index .full-panel {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+html.PolicyCenter.ApplyPolicy.index .pageContent h1,
+html.PolicyCenter.ApplyPolicy.index .pageContent h1 + p {
+    display: none;
+}
+
+html.PolicyCenter.ApplyPolicy.index #ListReplacer > table:first-child {
+    border: 1px solid black;
+}
+
+table.styledTableCustom td.colOutcome {
+    width: 25% !important;
+    white-space: normal !important;
+    overflow: auto !important;
+}
+table.styledTableCustom td.colFromTo {
+    	width: 65% !important;
+}
+
+body{
+background: white;
+
+}
+.pageBackground {
+    border: none;
+    box-shadow:none;
+}
+
+#recentMsgsDiv thead td:nth-child(2),
+#recentMsgsDiv thead td:nth-child(3) {
+  width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#recentMsgsDiv tbody td[title*="@"],
+#recentMsgsDiv tbody td[title*="@"]:after {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.constrain #references table.styledTable thead td:nth-child(3),
+.constrain #references table.styledTableEllipsis thead td:nth-child(3) {
+	width: 99%;
+}
+
+.constrain #references,
+.constrain #references {
+	max-width: 900px;
+}
+
+
+.full-panel { display: inline-block; width: auto; max-width: 100%; min-width: 51%;}
+
+
+
+tbody[id^=pathListRow].tableList a {
+	padding: .1em 0 .1em 0;
+    border: 1px solid transparent;
+}
+
+tbody[id^=pathListRow].tableList a:hover {
+    background-color: #d5d5d5;
+    border: 1px solid #aaaaaa;
+    text-decoration: none;
+}

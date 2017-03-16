@@ -1,0 +1,14 @@
+/* spamlogic:only accept */
+#SimpleAcceptToSummary,
+#SimpleRejectFromSummary {
+  font-size: 0;
+  a {
+  font-size: .7rem;
+  display: block; }
+}
+
+#PolicyPageDiv .full-panel {
+    width: 50%;
+    &:last-child {
+      float: right; }
+}

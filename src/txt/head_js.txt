@@ -1,0 +1,8 @@
+// ==UserScript==
+// @name         CSEG Full Length Recent Messages
+// @version      0.0.1
+// @author       Roman Schwarz <rschwarz@sievers-group.com>
+// @match        https://localhost/Appliance/*
+// @run-at       document-idle
+// @grant        none
+// ==/UserScript==

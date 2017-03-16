@@ -1,0 +1,46 @@
+@import 'base64';
+
+$iconSize: 56px;
+$iconUrlMap: (
+  catPolicy: "/Appliance/PolicyCenter/index.jsp",
+  catMessages: "/Appliance/MessageCenter/index.jsp",
+  catSystem: "/Appliance/SystemsCenter/index.jsp",
+  catReports: "/Appliance/ReportCenter/index.jsp",
+  catHealth: "/Appliance/SystemsCenter/Health/index.jsp",
+  catUsers: "/Appliance/UserCenter/index.jsp"
+);
+
+@each $icon, $url in $iconUrlMap {
+  .tableMenu a[href="#{$url}"] tr:first-of-type td:first-of-type {
+      height: $iconSize;
+      background-position: left center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(#{map-get($base64Images, $icon)});
+
+      img {
+        display: none;
+      }
+  }
+}
+
+
+
+
+
+$replaceImages: (
+  "/Appliance/Images/GreenTick-16.png": "icoGreenTick",
+  "/Appliance/Images/Forbidden-16.png": "icoForbidden",
+  "/Appliance/Images/delete2-16.png": "icoDelete",
+  "/Appliance/Images/Icons/Attention-24.png": "icoAttention",
+  "/Appliance/Images/Icons/Help-24.png": "icoHelp",
+  "/Appliance/Images/Icons/FolderYellow-16.png": "icoFolderYellow",
+  "/Appliance/Images/Icons/Download-16.png": "icoDownload",
+  "/Appliance/Images/CrossInBox-16.png": "icoCrossInBox"
+);
+
+@each $old, $new in $replaceImages {
+  img[src="#{$old}"] {
+    content: url(#{map-get($base64Images, $new)});
+  }
+}

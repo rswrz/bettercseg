@@ -1,0 +1,71 @@
+#chooseColor {
+  table,
+  tbody,
+  td,
+  tr {
+    display: block;
+  }
+
+  td[title] img {
+    /*background-color: black !important;*/
+    width: 24px;
+    height: 24px;
+  }
+
+  td[title="None"] img {
+    content: url('/Appliance/Images/blank.gif');
+    border: 1px solid black;
+    background-color: #eee;
+  }
+
+  td[title="Magenta"] img {
+    background-color: #444;
+  }
+
+  td[title="Purple"] img {
+    background-color: #1aa4d9;
+  }
+
+  $colorTitle: (
+    None: " Whitelist (Default)",
+    Magenta: "Blacklist",
+    Yellow: "Exception",
+    Orange: "SpamLogic Restriction",
+    Purple: "Group Default (Space)",
+  );
+
+  @each $color, $title in $colorTitle {
+    td[title="#{$color}"]:after {
+      content: "#{$title}";
+    }
+  }
+}
+
+
+
+.tableList:nth-child(even):not([class*="tableList-"]), .alarmRaisedEven, .alarmClearedEven {
+    	background-color: #eee;
+}
+.tableList:nth-child(even):not([class*="tableList-"]), .alarmRaisedEven, .alarmClearedEven {
+    	background-color: #ddd;
+}
+
+.tableList.tableList-red {
+    background-color: #444;
+}
+.tableList.tableList-red:hover {
+    background-color: #555;
+}
+
+.tableList.tableList-purple {
+    background-color: #1aa4d9;
+}
+.tableList.tableList-purple:hover {
+    background-color: #40BAE4;
+}
+  td[title="Magenta"] img {
+    background-color: #444 !important;
+  }
+  td[title="Purple"] img {
+    background-color: #1aa4d9 !important;
+  }

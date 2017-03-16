@@ -1,0 +1,327 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body.aqua,
+body.aqua .pageFrame,
+body.aqua .pageBackground,
+body.aqua .pageBackground .pageContainer {
+  height: 100%;
+}
+
+body.aqua,
+body.aqua .pageFrame,
+body.aqua .pageBackground,
+body.aqua .pageBackground .pageContainer,
+body.aqua div.pageBanner,
+body.aqua .tabPage div.constrain,
+body.aqua .fullPanel div.constrain,
+#recentMsgs,
+.taskMenuContainer table,
+body.aqua .sidebar p {
+  width: 100%;
+}
+
+body.aqua div.pageBanner span.logo {
+  top: auto;
+  right: 25px;
+  bottom: 0px;
+  left: auto;
+}
+
+body.aqua div.logOutBanner {
+  padding-right: 25px;
+  padding-top: 3px;
+}
+
+body.aqua .pageBackground {
+  border: 0;
+  margin: 0;
+}
+
+body.aqua .pageBackground,
+body.aqua .pageBackground .pageContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body.aqua .pageBackground .pageContainer .pageContent {
+  padding-left: 250px;
+  box-sizing: border-box;
+  width: 100%;
+  float: none;
+}
+
+body.aqua .version {
+  float: none;
+}
+
+body.aqua div.fullPanel,
+body.aqua div#warningPanel,
+body.aqua .tabPage,
+body.aqua .helpPanel,
+body.aqua .tasksPanel,
+body.aqua .changesMadePanel,
+body.aqua .warningsPanel,
+body.aqua .sidebarPanel,
+body.aqua div#errorPanel {
+  background: none;
+}
+
+body.aqua div.fullPanel,
+body.aqua div#warningPanel,
+body.aqua .tabPage {
+  margin: 20px 10px 20px 0px;
+}
+
+body.aqua .tabPage {
+  margin-top: 0;
+}
+
+
+/* boxes */
+body.aqua div.fullPanel,
+body.aqua .tabPage,
+body.aqua div#warningPanel, /* content */
+body.aqua div#errorPanel, /* content */
+body.aqua .changesMadePanel, /* sidebar */
+body.aqua .warningsPanel,
+body.aqua .tasksPanel,
+body.aqua .helpPanel,
+body.aqua .sidebarPanel { /* sidebar */
+  border: 1px solid;
+  padding: 8px 10px 10px;
+}
+
+body.aqua div#warningPanel, /* content */
+body.aqua div#errorPanel { /* content */
+    margin-top: 16px;
+}
+
+
+
+body.aqua .changesMadePanel, /* sidebar */
+body.aqua .warningsPanel,
+body.aqua .tasksPanel,
+body.aqua .helpPanel,
+body.aqua .sidebarPanel { /* sidebar */
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+/* red */
+body.aqua div#errorPanel { /* content */
+	background-color: $color-BoxError-bg;
+  border-color: $color-BoxError-br;
+}
+
+/* yellow */
+body.aqua .changesMadePanel, /* sidebar */
+body.aqua .warningsPanel { /* sidebar */
+  background-color: $color-BoxWarning-bg;
+  border: 1px solid $color-BoxWarning-br;
+}
+
+/* green */
+body.aqua div#warningPanel { /* content */
+  background-color: $color-BoxInfo-bg;
+  border-color: $color-BoxInfo-br;
+}
+
+
+
+/* lightgreen */
+body.aqua div.fullPanel,
+body.aqua .tabPage,
+body.aqua .tasksPanel,
+body.aqua .helpPanel,
+body.aqua .sidebarPanel { /* sidebar */
+  background-color: #EEF5D8;
+  border-color: #CADF86;
+}
+
+
+
+
+
+
+#warningPanelTopCap,
+#warningPanelEndCap,
+body.aqua div.fullPanelTopCap,
+body.aqua div.fullPanelEndCap,
+body.aqua .tabPageTopCap,
+body.aqua .tabPageEndCap,
+body.aqua .tasksPanelEndCap,
+body.aqua .changesMadePanelEndCap,
+body.aqua .warningsPanelEndCap,
+body.aqua .helpPanelEndCap,
+body.aqua .sidebarPanelEndCap,
+body.aqua div#errorPanelTopCap,
+body.aqua div#errorPanelEndCap {
+  display: none !important;
+}
+
+body.aqua .fullPanel h2 {
+  margin: .3em 0 .7em;
+}
+
+div#routeListWrapper {
+  height: auto !important;
+}
+
+
+/* #recentMsgs thead td:nth-child(3) {
+  width: 300px;
+} */
+
+
+/* BUTTON */
+
+body.aqua div.clickHereToEdit div.btn {
+  right: -15px;
+  left: auto;
+  top: -36px;
+  bottom: auto;
+  background: none;
+  background-color: #92D400;
+  color: black;
+}
+
+body.aqua form.editBtnNoFrame div.clickHereToEdit div.btn {
+  right: -5px;
+  left: auto;
+  top: -23px;
+  bottom: auto;
+}
+
+body.aqua form.editBtnNoFrame span.deletePanelBtn {
+  top: -23px;
+  right: 230px;
+  left: auto;
+  height: 22px;
+}
+
+body.aqua form.editBtnNoFrame span.deletePanelBtn:before {
+  content: "delete";
+  background-color: red;
+  color: white;
+  padding: 3px 8px 2px 8px;
+  height: 100%;
+  display: block;
+}
+
+body.aqua form.editBtnNoFrame span.deletePanelBtn img {
+  display: none;
+}
+
+
+/* SYSTEM */
+
+#logFileList.listControl,
+#logFileList.listControlMouseOver {
+  height: 300pt !important;
+}
+
+
+/* OTHER */
+
+.ruleElementWhatToDo > div {
+  border: 1px solid green;
+}
+
+.testTitle {
+  font-size: 1.7em;
+}
+
+
+/**************************************************
+** TABLES
+**************************************************/
+
+
+/* All with icons */
+
+td[style="white-space: nowrap;"],
+
+/* Policy -> Disposal Actionsv -> [Tab] Message Areas */
+
+tbody[id^="msgAreaListRow"] > tr > td:nth-child(2),
+
+/* Policy -> Disposal Actionsv -> [Tab] Relay Servers */
+
+tbody[id^="relayToListRow"] > tr > td:nth-child(2),
+
+/* Policy Rule List */
+
+tbody[id^="rulesListRow"] > tr > td:nth-child(1) {
+  width: 16
+}
+
+
+
+
+
+
+
+
+.infoPanelLabelTopRule ,
+.infoPanelLabel {
+ 	vertical-align: top;
+}
+
+/*
+.infoPanelLabelTopRule + td,
+.infoPanelLabel + td,
+#SimpleAcceptToSummary,
+#SimpleRejectFromSummary {
+ 	font-size: 0;
+}
+
+.infoPanelLabelTopRule + td *,
+.infoPanelLabel + td *,
+#SimpleAcceptToSummary *,
+#SimpleRejectFromSummary * {
+ 	font-size: .65rem;
+}
+
+.infoPanelLabelTopRule + td a,
+.infoPanelLabel + td a,
+#SimpleAcceptToSummary a,
+#SimpleRejectFromSummary a {
+    display: block;
+    margin-bottom: .5rem;
+}
+*/
+
+.infoPanelLabelTopRule + td a b {
+    font-weight: normal;
+}
+
+.infoPanelLabelTopRule + td a b + b {
+    display: block;
+    margin-left: 20px;
+    margin-top: .1rem;
+}
+
+#SimpleAcceptToSummary a,
+#SimpleRejectFromSummary a {
+    display: inline-block;
+    width: 50%;
+
+}
+
+#SimpleAcceptToSummary a:hover,
+#SimpleRejectFromSummary a:hover {
+    text-decoration: underline;
+}
+
+body.aqua .fullPanel a {
+ 	display: inline-block;
+}
+
+body.aqua .fullPanel a:hover {
+    text-decoration: none;
+}

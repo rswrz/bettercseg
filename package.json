@@ -1,0 +1,25 @@
+{
+  "name": "bettercseg",
+  "version": "0.0.1",
+  "description": "Better CSEG Webinterface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cseg",
+    "css",
+    "javascript"
+  ],
+  "author": "Roman Schwarz <rschwarz@sievers-group.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header": "^1.8.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-wrap": "^0.13.0",
+  }
+}

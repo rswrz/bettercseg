@@ -1,0 +1,51 @@
+/* GLOBAL: Everything need border-box sizing */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+
+/* GLOBAL: width 100% */
+.fullPanel div.constrain,
+.pageBackground,
+.pageBackground .pageContainer .pageContent,
+.pageFrame,
+.tabPage div.constrain,
+div.pageBanner {
+  width: 100%;
+}
+
+
+/* GLOBAL: height auto */
+.pageBackground .pageContainer {
+  height: auto;
+}
+
+.pageBackground,
+.pageBackground .pageContainer:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/* GLOBAL: Page Content */
+.pageBackground .pageContainer .pageContent {
+  padding-left: 218px;
+  float: none;
+}
+
+
+/* HEADER: Username to the right */
+div.logOutBanner {
+  padding-right: 1rem;
+}
+
+
+/* HEADER: Logo to the right */
+div.pageBanner span.logo {
+  left: auto;
+  right: 1rem;
+  top: 1rem;
+}

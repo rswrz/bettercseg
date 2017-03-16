@@ -1,0 +1,15 @@
+/* Policy ForMailSec Box
+   Policy>MailPolicyRoutes>ModifyPolicyRoute:ForMailSend-Box */
+tbody[id^=pathListRow].tableList {
+
+  font-size: 0;
+
+  td {
+    vertical-align: top; }
+
+  a, td[title^="Anyone"] {
+    font-size: .7rem; }
+
+  a {
+    display: block; }
+}

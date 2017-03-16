@@ -1,0 +1,17 @@
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+
+var peerList = document.getElementById('peerListFrame');
+var peers = peerList.querySelectorAll('input[type=checkbox]');
+var i = 0;
+
+for (i; i <= peers.length; i++) {
+  eventFire(peers[i], 'click');
+}

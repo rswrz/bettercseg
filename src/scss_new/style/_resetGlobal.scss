@@ -1,0 +1,16 @@
+.fullPanelTopCap,
+.fullPanelEndCap,
+.helpPanelEndCap,
+.warningsPanelEndCap,
+.sidebarPanelEndCap,
+#warningPanelTopCap,
+#warningPanelEndCap {
+  display: none;
+}
+
+.helpPanel,
+.sidebarPanel,
+.changesMadePanel,
+.warningsPanel {
+  background: none;
+}

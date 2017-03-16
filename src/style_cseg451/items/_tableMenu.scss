@@ -1,0 +1,21 @@
+$itemWidth: 200px;
+
+.pageBackground .pageContainer .full-panel:not(#summaryTablePanel) .tableMenu {
+  @extend %fullWidth;
+
+  tbody {
+    display: block;
+    vertical-align: top; }
+
+  td, tr {
+    display: inline-block; }
+
+  tr {
+    display: inline; }
+
+  td {
+    width: $itemWidth; }
+
+  a {
+    display: block; }
+}

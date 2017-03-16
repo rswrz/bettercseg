@@ -1,0 +1,48 @@
+$policyGroupBorder: 1px solid #aaa;
+
+
+div#routeListWrapper {
+  //height: 100% !important;
+  border: none;
+
+  .tableList.tableList-purple:after {
+    content: '';
+    display: table-row;
+    height: 3em;
+    background-color: white;
+  }
+
+  .tableList.tableList-purple i {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.02em;
+  }
+
+  #policyRouteTable > tbody:last-of-type > tr:first-of-type > td,
+  .tableList.tableList-purple > tr > td {
+    border-bottom: $policyGroupBorder;
+  }
+
+  #policyRouteTable > tbody:first-of-type > tr:first-of-type > td,
+  .tableList-purple + .tableList > tr > td {
+    border-top: $policyGroupBorder;
+  }
+
+  .tableList > tr > td {
+    &:first-of-type {
+      border-left: $policyGroupBorder; }
+    &:last-of-type {
+      border-right: $policyGroupBorder; }
+  }
+
+  .endpoint[title="Anyone"] {
+    display: inline;
+
+    & + .endpoint[title="Bounces"] {
+      display: inline;
+      &:before {
+        content: '+';
+      }
+    }
+  }
+}

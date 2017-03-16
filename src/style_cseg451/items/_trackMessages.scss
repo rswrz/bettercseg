@@ -1,0 +1,5 @@
+/* Tracking greenTick Icon bugfix width/height */
+tbody[id^="trackingListRow"] > tr > td:first-of-type img {
+  width: 16px;
+  height: 16px;
+}

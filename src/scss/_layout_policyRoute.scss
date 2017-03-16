@@ -1,0 +1,18 @@
+/*
+ * Modification for:
+ * Policy -> Mail Policy Routes -> Single Policy Route (select->edit)
+ */
+
+/* "For Mail Sent" Box */
+#endPointsSummary.policyDiv td:not(.infoPanelLabel) a {
+    display: inline;
+
+    &:not(:first-child):before {
+        content: "\A";
+        white-space: pre;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

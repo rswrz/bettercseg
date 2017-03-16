@@ -1,0 +1,15 @@
+/* Tabs */
+body.aqua .divTabBar [class^=tabButton] .tabLH,
+body.aqua .divTabBar [class^=tabButton] .tabRH,
+body.aqua .divTabBar .leftHandSpacer {
+    display: none;
+}
+
+
+body.aqua .divTabBar [class^=tabButton] .tabMI {
+ 	/* background: red; */
+}
+
+body.aqua .divTabBar .tabMI .contentHolder{
+    padding: 0 10px;
+}

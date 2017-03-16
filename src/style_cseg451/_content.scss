@@ -1,0 +1,30 @@
+/* 100% width */
+.pageFrame,
+.pageBackground {
+  @extend %fullWidth;
+}
+
+/* Page Container */
+.pageBackground .pageContainer {
+  height: auto;
+  @extend %clearfix;
+  @extend %fullWidth;
+}
+
+/* Page Content */
+.pageBackground .pageContainer .pageContent {
+  float: none;
+  width: auto;
+  margin-left: 235px; // sidebar width
+}
+
+/* Page Content with hidden Sidebar */
+.pageBackground .hideSideBar .pageContainer .pageContent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* every outlined box in content */
+.full-panel {
+  @extend %fullWidth;
+}

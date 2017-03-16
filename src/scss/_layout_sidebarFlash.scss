@@ -1,0 +1,9 @@
+/* flash in sidebar */
+#leftPanelInsertionDiv1 h1 + div {
+  margin: 0 !important;
+}
+
+#leftPanelInsertionDiv1 #pieChart,
+#leftPanelInsertionDiv1 #pieChart embed {
+ 	width: 100%;
+}

@@ -1,0 +1,25 @@
+/* RecentMsgsList */
+#recentMsgs thead td:nth-child(1) {
+    width: 22px !important;
+}
+#recentMsgs thead td:nth-child(2) {
+    width: 25% !important;
+}
+#recentMsgs thead td:nth-child(3) {
+    width: 25% !important;
+}
+#recentMsgs thead td:nth-child(4) {
+    width: 120px !important;
+}
+#recentMsgs thead td:nth-child(5) {
+    width: 240px !important;
+}
+#recentMsgsDiv thead td:nth-child(6) {
+    width: 80px !important;
+}
+#recentMsgs .tableListUnselected .outcome {
+ 	background-color: white;
+}
+#recentMsgs .tableListUnselectedOdd .outcome {
+ 	background-color: #f0f0f0;
+}

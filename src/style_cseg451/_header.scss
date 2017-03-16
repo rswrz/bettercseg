@@ -1,0 +1,36 @@
+div.pageBanner {
+  @extend %fullWidth;
+}
+
+/* bigger breadcrumb*/
+#breadcrumb {
+    font-size: 1rem;
+    div {
+      font-size: .7em;
+    }
+}
+
+/* No website title */
+div.pageBanner div#productNameContainer,
+div.pageBanner span.logo {
+  @extend %noDisplay;
+}
+div.pageBanner div#bannerTabs {
+  position: static;
+}
+div.pageBanner {
+  height: auto;
+}
+div.logOutBanner {
+  margin-top: .5em;
+  margin-right: 1em;
+  padding-right: 0;
+  color: white;
+  a {
+    color: inherit; }
+}
+
+/* fix system menu */
+div#systemMenuPopUp {
+  width: 650px;
+}
